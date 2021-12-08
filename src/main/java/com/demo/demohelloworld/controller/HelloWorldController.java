@@ -14,7 +14,7 @@ public class HelloWorldController {
 
 	@RequestMapping("/hello")
     public String sayHello() {
-        return "Hello World in Spring Boot!";
+        return "Hello World in Spring Boot! Test for Jenkins!";
     }
 	
 	@RequestMapping("/time")
