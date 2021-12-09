@@ -2,9 +2,12 @@ stages:
   - build
   - deploy
   - test
+variables:
+  PUSH_VERSION: "v1"
+  HUB_USER: "kuofrank"
+  HUB_PWD: "Systex@820214"
   
 feat-build:
-  image: 
   stage: build
   only:
     - feature
