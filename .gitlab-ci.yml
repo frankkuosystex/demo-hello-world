@@ -8,6 +8,7 @@ variables:
   HUB_PWD: "Systex@820214"
   
 feat-build:
+  image: maven:latest
   stage: build
   only:
     - feature
