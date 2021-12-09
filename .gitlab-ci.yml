@@ -4,11 +4,16 @@ stages:
   - test
   
 feat-build:
+  image: 
   stage: build
   only:
     - feature
   script:
     - echo "dev build"
+    - pwd
+    - ls
+    - export #印出環境變數
+#    - mvn compile jib:build
 
 feat-deploy:
   stage: deploy
