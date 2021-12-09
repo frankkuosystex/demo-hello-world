@@ -53,7 +53,7 @@
 					</from>
 					<to>
 						<!--image名稱和tag，使用了mvn内置變數${project.version}，表示當前的version -->
-						<image>docker.io/kuofrank/helloworld:${env.PUSH_VERSION}</image>
+						<image>docker.io/kuofrank/gitlabcicd:${env.PUSH_VERSION}</image>
 						<auth>
 							<username>${env.HUB_USER}</username>
 							<password>${env.HUB_PWD}</password>

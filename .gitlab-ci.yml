@@ -16,7 +16,11 @@ feat-build:
     - pwd
     - ls
     - export #印出環境變數
-#    - mvn compile jib:build
+    - mvn compile jib:build
+#    - mvn compile jib:build \
+#      -Djib.to.auth.username=${CI_REGISTRY_USER} \
+#      -Djib.to.auth.password=${CI_REGISTRY_PASSWORD} \
+#      -Djib.to.image=${CI_REGISTRY_IMAGE}:latest
 
 feat-deploy:
   stage: deploy
@@ -25,9 +29,9 @@ feat-deploy:
   script:
     - echo "dev deploy"
 
-feat-test:
-  stage: test
-  only:
-    - feature
-  script:
-    - echo "dev testing"
+#feat-test:
+#  stage: test
+#  only:
+#    - feature
+#  script:
+#    - echo "dev testing"
