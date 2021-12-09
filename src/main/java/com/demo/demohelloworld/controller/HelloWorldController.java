@@ -14,7 +14,7 @@ public class HelloWorldController {
 
 	@RequestMapping("/hello")
     public String sayHello() {
-        return "Hello World in Spring Boot! Feature Branch...";
+        return "Hello World in Spring Boot! Feature Branch.....";
     }
 	
 	@RequestMapping("/time")
