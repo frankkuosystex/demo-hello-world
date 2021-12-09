@@ -1,0 +1,25 @@
+stages:
+  - build
+  - deploy
+  - test
+  
+feat-build:
+  stage: build
+  only:
+    - feature
+  script:
+    - echo "dev build"
+
+feat-deploy:
+  stage: deploy
+  only:
+    - feature
+  script:
+    - echo "dev deploy"
+
+feat-test:
+  stage: test
+  only:
+    - feature
+  script:
+    - echo "dev testing"
